@@ -1,1 +1,1 @@
-web: gunicorn skillsgurukul.wsgi --log-file -
+web: gunicorn skillsgurukul.wsgi
