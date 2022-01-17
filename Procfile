@@ -1,0 +1,1 @@
+web: gunicorn skillsgurukul.wsgi --log-file -
