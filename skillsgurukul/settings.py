@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'skillsgurukul.urls'
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
@@ -127,6 +127,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = '21051070@kiit.ac.in'
 EMAIL_HOST_PASSWORD = 'ouubzhtwelhinnnu'
 
+django_heroku.settings(locals()))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
