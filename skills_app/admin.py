@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Updates
+from .models import Email_list
 # Register your models here.
 
-admin.site.register(Updates)
+admin.site.register(Email_list)
