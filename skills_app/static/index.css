@@ -39,7 +39,7 @@ input:focus{
 #nav{position:fixed; top:0px; left:0px; width:100%; height:80px; z-index:10; background:#FBFBFC;}
 #logo{font-family: 'Fredoka One', cursive; color: #0F75BB; position:absolute; top:0px; left:30px; font-size:26px;}
 #nav_cont{position:absolute; right:20px; top:10px;}
-#mobnav{display:none; list-style-type:none;position:fixed; top:60px;  background:#FBFBFC; border-bottom-left-radius:10px; right:2%; width:auto; height:130px; z-index:10; font-family: 'Fredoka One', cursive;}
+#mobnav{display:none; list-style-type:none;position:fixed; top:60px;  background:#FBFBFC; border-bottom-left-radius:10px; right:2%; padding-right:10px; width:auto; height:130px; z-index:10; font-family: 'Fredoka One', cursive;}
 
 .fa-chevron-left{display:none;}
 .fa-chevron-right{display:none;}
