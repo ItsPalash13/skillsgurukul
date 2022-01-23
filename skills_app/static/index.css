@@ -50,8 +50,9 @@ input:focus{
 #pt1cnt{font-family: 'Outfit', sans-serif; position:relative; top:-40px; line-height:150%; font-weight:200; font-size:22px; color:#253138; }
 #pt1frm{position:relative; width:auto; height:200px; top:-30px; left:5px;}
 #pt1inp{float:left; width:320px; height:50px; margin-top:10px; border:none; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius:5px; padding-left:10px; font-size:18px;}
-#pt1sub{transition: 0.3s; float:left; width:180px; height:50px; margin-top:-35px;  border-radius:26px; color:white; background:#0F75BB;text-decoration: none; border:1px solid #0F75BB; font-size:14px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif; font-weight:400;}
+#pt1sub{transition: 0.2s; float:left; width:180px; height:50px; margin-top:-35px;  border-radius:26px; color:white; background:#0F75BB;text-decoration: none; border:1px solid #0F75BB; font-size:14px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif; font-weight:400;}
 #pt1sub:hover{opacity:0.85;}
+
 #pt1frmdt{opacity:0; font-family: 'Outfit', sans-serif; float:left;line-height:150%; font-weight:300; font-size:16px; color:#253138; }
 #lm{position:absolute; top:120%; left:0%; width:100%; height:10%;font-size:29px; overflow:hidden;font-family:myFirstFont;color: #2271E8;}
 
@@ -209,13 +210,14 @@ opacity:1;
 .box:hover::after {
     opacity: 1;
 }
-
+a{text-decoration:none;}
 #txtarmsg{float:left; width:350px; height:120px; margin-top:10px; border:none; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius:5px; padding-left:10px; font-size:18px;}
-#letscon{position:absolute; width:14%; left:42.5%; height:50px; top:428%; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
+#letscon{transition:0.2s; position:absolute; width:14%; left:42.5%; height:50px; top:428%; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
+#letscon:hover{opacity:0.85;}
 #pt8cnt{position:absolute; top:-13%; left:5%; width:40%;}
 
 @media only screen and (max-width: 550px) {
-
+#kdshowtg{position:absolute; top:27%; left:50px; color:white; font-size:20px; font-family: 'Fredoka One', cursive;}
 .box:hover {
   -webkit-transform: scale(1, 1);
   opacity:0.95;
