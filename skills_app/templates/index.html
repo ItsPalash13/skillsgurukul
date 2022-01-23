@@ -3,6 +3,7 @@
 <head>
 	{% load static %}
 	<title>SkillsGuru | Home</title>
+	<link rel="icon" href="static/logo.jpeg" type="image/gif" sizes="32x32">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -27,20 +28,29 @@
 
 
 
-<body style="overflow-x:hidden; background:#FBFBFC;">
+<body style="overflow-x:hidden; background:#FBFBFC;" id="home">
 <div id="nav">
 
 <ol id="mobnav">
   <li style=" color: #0F75BB; font-size:18px;">About</li>
  <li style=" color: #F7941C; font-size:18px;">Login</li>
+  <li style=" color: #0F75BB; font-size:18px;">Courses</li>
 </ol>	
 
 <p id="logo">Skills<span style="color: #F7941C;">Guru</span>kul.</p>
 <div id="nav_cont" >
-<p class="navsc" style="font-family: 'Fredoka One', cursive; color: #0F75BB; position:relative; float:left; margin-left:20px; font-size:18px;">About</p>
-<p class="navsc" style="font-family: 'Fredoka One', cursive; color: #F7941C; position:relative; float:left; margin-left:20px; font-size:18px;">Login</p>
-
-<div class="container">
+<a href=""><p class="navsc" style="font-family: 'Fredoka One', cursive; color: #0F75BB; position:relative; float:left; margin-left:20px; font-size:18px;">Home</p></a>
+<a href="#connect">
+<p class="navsc" style="font-family: 'Fredoka One', cursive; color: #F7941C; position:relative; float:left; margin-left:20px; font-size:18px;">
+Contact
+</p></a>
+<a href="#courses">
+<p class="navsc" style="font-family: 'Fredoka One', cursive; color: #0F75BB; position:relative; float:left; margin-left:20px; font-size:18px;">Courses</p></a>
+<a href="#kidshow">
+<p class="navsc" style="font-family: 'Fredoka One', cursive; color: #F7941C; position:relative; float:left; margin-left:20px; font-size:18px;">
+Student Showcase
+</p></a>
+<div class="container" style="display:none;">
   <div class="bar1" style="background: #0F75BB"></div>
   <div class="bar2" style="background:#0F75BB"></div>
   <div class="bar3" style="background: #0F75BB"></div>
@@ -53,20 +63,14 @@
 <div id="animContainer" style="">
 </div>
 <div id="pt1hed">
-  <p id="pt1hedcnt">Making lorem of aliquaial consectetur</p>
-  <p id="pt1cnt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim est laborum.<br>Duis aute irure dolor eu fugiat nulla pariatur.</p>
-
-
-  <form id="pt1frm" method="POST">
-  	{% csrf_token %}
-  	{% for field in form %}
-  	{{ field }}
-  	{% endfor %}
+  <p id="pt1hedcnt">Teaching skills for a Brighter Future</p>
+  <p id="pt1cnt">A conventional spin back to the days when students used to sit under the shade of trees, surrounding their one Guru to learn valuable life skills. </p>
    
-  
-    <button type="submit" id="pt1sub"><b>Get Started</b> <i style="margin-left:5px;" class="fa fa-bell"></i></button>
+  <a href="#connect">
+    <button id="pt1sub"><b>LET'S CONNECT</b> </button>
+   </a>
 <p id="pt1frmdt">Get Started with regular Updates from SkillsGurukul</p>
-  </form>
+
 
 </div>
 </div>
@@ -81,18 +85,18 @@
 	<div id="animContainer1" style=""></div>
 		<div id="anim1cnt">
 			<p id="anim1shrthd">
-				IDEA PLAN
+				IDEATION
 			</p>
 			<p id="anim1bighd">
-				Make A Message Plan
+				Pave A Personalised Path
 			</p>
 			<p id="anim1dis">
-				Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Cras semper auctor neque vitae tempus. Odio tempor orci dapibus ultrices in iaculis nunc sed.
+				Revitalising the ancient Gurukul ideology as we teach students how to spark original practical ideas with a small crew which put all their personalised focus onto you.
 			</p>
 			<p id="anim1chkbox">
-				<span><i class="fa fa-check" style="color: #20B573"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br>
-				<span><i class="fa fa-check" style="color: #20B573"></i> Ut enim ad minim veniam nostrud exercitation ullamco.</span><br>
-				<span><i class="fa fa-check" style="color: #20B573"></i> Excepteur sint occaecat cupidatat non proident.</span>
+				<span><i class="fa fa-check" style="color: #20B573"></i> Prepping students with personal care for individuality.</span><br>
+				<span><i class="fa fa-check" style="color: #20B573"></i> Promoting innovative thinking through handy projects.</span><br>
+				<span><i class="fa fa-check" style="color: #20B573"></i> Paving a better future with practical applications.</span>
 			</p>
             <button id="anim1lm">Learn More</button>
 		</div>
@@ -103,49 +107,30 @@
 	<div id="animContainer2" style=""></div>
 		<div id="anim2cnt">
 			<p id="anim2shrthd">
-				IDEA PLAN
+				LIFE SKILLS
 			</p>
 			<p id="anim2bighd">
-				Make A Education Plan
+				Raise A Reliable Future
 			</p>
 			<p id="anim2dis">
-				Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Cras semper auctor neque vitae tempus. Odio tempor orci dapibus ultrices in iaculis nunc sed.
+				Wrapped around the tree of life, our Gurus teach real life skills necessary to survive in the world of the future promoting free and original thinking.
 			</p>
 			<p id="anim2chkbox">
-				<span><i class="fa fa-check" style="color: #3E71C4"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br>
-				<span><i class="fa fa-check" style="color: #3E71C4"></i> Ut enim ad minim veniam nostrud exercitation ullamco.</span><br>
-				<span><i class="fa fa-check" style="color: #3E71C4"></i> Excepteur sint occaecat cupidatat non proident.</span>
+				<span><i class="fa fa-check" style="color: #3E71C4"></i> Teaching skills to make students ready to face the world.</span><br>
+				<span><i class="fa fa-check" style="color: #3E71C4"></i> Free flow of ideas among students to promote originality.</span><br>
+				<span><i class="fa fa-check" style="color: #3E71C4"></i> Bringing ideas to life with guidance through our Gurus.</span>
 			</p>
             <button id="anim2lm">Learn More</button>
 		</div>
 </div>
 
-<div id="part4">
-	<div id="animContainer3" style=""></div>
-		<div id="anim3cnt">
-			<p id="anim3shrthd">
-				IDEA PLAN
-			</p>
-			<p id="anim3bighd">
-				Make A Message Plan
-			</p>
-			<p id="anim3dis">
-				Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Cras semper auctor neque vitae tempus. Odio tempor orci dapibus ultrices in iaculis nunc sed.
-			</p>
-			<p id="anim3chkbox">
-				<span><i class="fa fa-check" style="color: #FFCB3D"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br>
-				<span><i class="fa fa-check" style="color: #FFCB3D"></i> Ut enim ad minim veniam nostrud exercitation ullamco.</span><br>
-				<span><i class="fa fa-check" style="color: #FFCB3D"></i> Excepteur sint occaecat cupidatat non proident.</span>
-			</p>
-            <button id="anim3lm">Learn More</button>
-		</div>
-</div>
+
 
 
 
 <div id="part5">
 	<div id="oc">
-	<center>Our Courses <img src="static/Images/learn-more-arrow.svg">	</center>
+	<center id="courses">Our Courses <img src="static/Images/learn-more-arrow.svg">	</center>
 </div>
 <i class="fa fa-chevron-left" style="position:absolute; top:45%; left:2%; z-index:4; color:#F7941C; font-size:20px;"></i>
 <i class="fa fa-chevron-right" style="position:absolute; top:45%; right:2%; z-index:4; color:#F7941C; font-size:20px;"></i>
@@ -153,45 +138,74 @@
 
 		<div id="part6dv" class="box" style="background:#292F4D;">
 			<div id="pt6cnt">
-				<p id="pt6txt">Lorem ipsum dolor sit WebDev</p>
+				<p id="pt6txt">Coding & Game Dev</p>
 			</div>
 			<div id="pt6img">
 				<img src="/static/Images/Smash Illustrations/Ready-to-use Scenes/Png/Designers.png" id="pt6imgct">
 			</div>
 			<div id="pt6stxt">
-				<p id="pt6sttx">Lorem ipsum dolor sit consectetur adipiscing elit.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</p>
+				<p id="pt6sttx">
+            <ul style="font-family: 'Outfit', sans-serif; color:white;">
+            	<style type="text/css">
+            		li{padding:2px;}
+            	</style>
+            	<li> Python 1</li>
+                <li> Python 2</li>
+                <li> Python 3</li>
+                <li>Web Development (Javascript)</li>
+                <li>Game Development</li>
+
+            </ul>
+            </p>
 			</div>
 			
 
 		</div>
 		<div id="part6dv" class="box" style="background:#0e64e6; margin-left:5%;">
 			<div id="pt6cnt">
-				<p id="pt6txt">Lorem ipsum dolor sit Business</p>
+				<p id="pt6txt">Business & Finance</p>
 			</div>
 			<div id="pt6img">
 				<img src="/static/Images/Smash Illustrations/Ready-to-use Scenes/Png/New app.png" id="pt6imgct">
 			</div>
             <div id="pt6stxt">
-				<p id="pt6sttx">Lorem ipsum dolor sit consectetur adipiscing elit.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</p>
+				<p id="pt6sttx">
+            
+            <ul style="font-family: 'Outfit', sans-serif; color:white;">
+            	<style type="text/css">
+            		li{padding:2px;}
+            	</style>
+            	<li> Business & Personal Finance 1</li>
+                <li> Business & Personal Finance 2</li>
+                <li>Enterprenuership 1</li>
+                <li>Entrepenureship 2</li>
+                <li>Finance & Technology</li>
+            </ul>
+            </p>
 			</div>
 
 
 		</div>
 		<div id="part6dv" class="box" style="background:#F5A623; margin-left:5%;">
 			<div id="pt6cnt">
-				<p id="pt6txt">Lorem ipsum dolor sit Maths</p>
+				<p id="pt6txt">AP Mathematics</p>
 			</div>
 			<div id="pt6img">
 				<img src="{% static 'Images/Smash Illustrations/Ready-to-use Scenes/Png/Photo stock.png' %}" id="pt6imgct">
 			</div>
 			<div id="pt6stxt">
-				<p id="pt6sttx">Lorem ipsum dolor sit consectetur adipiscing elit.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</p>
+				<p id="pt6sttx">
+            <ul style="font-family: 'Outfit', sans-serif; color:white;">
+            	<style type="text/css">
+            		li{padding:2px;}
+            	</style>
+            	<li> Pre Algebra</li>
+                <li> Algebra 1 & Geometry 1</li>
+                <li> Algebra 2</li>
+                <li>Calculus</li>
+                <li>AP Courses</li>
+            </ul>
+            </p>
 			</div>
 
 		</div>
@@ -202,6 +216,7 @@
 	open=0;
 	$(document).ready(function(){  
    if ($(window).width() < 556) {
+   	$(".container").css({"display":"block"});
    	$(".container").click(function(){
         if (open==0) {
         	$("#mobnav").css({"display":"block"});
@@ -241,35 +256,13 @@ $(".fa-chevron-left").click(function(){
    }
 });
 </script> 
-<div id="part7">
-	<div id="pt7svg">
-		<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#F2F4F8" d="M49.9,-36.1C65.8,-19.9,80.4,0.9,79.1,22.7C77.8,44.4,60.5,67.1,39,75.2C17.5,83.4,-8.3,77,-31.2,65.6C-54.2,54.3,-74.3,37.9,-75.6,20.6C-76.9,3.3,-59.2,-14.9,-43.5,-31.1C-27.7,-47.3,-13.9,-61.4,1.6,-62.7C17,-63.9,34,-52.3,49.9,-36.1Z" transform="translate(100 100)" /></svg>
-	</div>
-	<img src="static/Images/bee-1296273_640.png" style="position:absolute; top:63%; width:30px; right:20%; z-index:-5;">
-     <img src="static/Images/honey-311047.svg" style="position:absolute; top:13%; width:30px; right:15%; z-index:-5;">
-	<img src="static/Images/honey-311047.svg" style="position:absolute; top:10%; width:30px; left:15%; z-index:-5;">
-
-    <div id="pt7chr">
-    	<div id="pt7img">
-    		<img src="https://images.newscientist.com/wp-content/uploads/2019/06/18142824/einstein.jpg" style="left:-100px; height:100%; position:relative;">
-    	</div>
-    	<center id="pt7head">Lorem ipsum dolor SkillsGurukul</center> 
-    	<div id="pt7cmtpos">
-
-    		<p id="pt7cmt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."<br><br>
-            <span id="pt7nm">Somit Joshi</span>  
-            <br><br>
-            <span id="pt7pos">FOUNDER & CEO</span>
-    		</p>
-
-    	</div>
-    </div>
-</div>
+<a href="#connect">
+<button id="letscon"><b>LET'S CONNECT</b> </button>
+</a>
 
 <div id="kdsshcnt">
 		<div style="position:relative; top:0%; left:0%; font-size:29px; overflow:hidden;font-family:myFirstFont;color: #2271E8;">
-	<center>Kids Showcase <img src="static/Images/learn-more-arrow.svg">	</center>
+	<center>Student Showcase <img src="static/Images/learn-more-arrow.svg">	</center>
 </div>
 </div>
 
@@ -277,40 +270,47 @@ $(".fa-chevron-left").click(function(){
 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-<i class="fa fa-chevron-left" id="lefts" style="position:absolute; top:5650px; left:2%; z-index:4; color:#0F75BB; font-size:20px;"></i>
-<i class="fa fa-chevron-right" id="rights" style="position:absolute; top:5650px; right:2%; z-index:4; color:#0F75BB; font-size:20px;"></i>
+<i class="fa fa-chevron-left" id="lefts" style="position:absolute; top:4050px; left:2%; z-index:4; color:#0F75BB; font-size:20px;"></i>
+<i class="fa fa-chevron-right" id="rights" style="position:absolute; top:4050px; right:2%; z-index:4; color:#0F75BB; font-size:20px;"></i>
 <div id="kidshow">
 
 	<div id="kdshow" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
 	
 		<div id="kdname">
-			<p id="proname">Katana Japanese Restaurant </p>
-			<p id="creator"><img id="creatorpic" src="https://i.kym-cdn.com/entries/icons/original/000/018/706/Popeye1.gif">
-
-				<span id="creatorname">BY Palash Vishwas</span></p>
+			<p id="proname">Techtonium Gaming UI/UX</p>
+			<div id="bu">Business</div>
+            <div id="wd">Web Design</div>
+				
 		</div>
-		<img src="static/Works/Snaps/w_s_2.png" style="position:relative; top:0%; width:100%;">
-		
+		<img src="static/Works/Snaps/w_s_2.png" id="kdimg">
+		<p id="kdshowtg">
+		<span style="color:#F7941C; background:white; padding:6px; border-radius:5px; padding-top:2px; padding-bottom:2px;">Game Development <i class="fa fa-gamepad" aria-hidden="true"></i></span><br>
+	     </p>
 	</div>
 	<div id="kdshow" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
 		<div id="kdname" style="">
-			<p id="proname">Palash V Photographer </p>
-			<p id="creator"><img id="creatorpic" src="https://i.kym-cdn.com/entries/icons/original/000/018/706/Popeye1.gif">
-
-				<span id="creatorname">BY Palash Vishwas</span></p>
+			<p id="proname">SkillsGurukul </p>
+			<div id="wd">Web Design</div>
+             <div id="wd">Advanced Python</div>
 		</div>
-		<img src="static/Works/Snaps/w_s_3.png" style="position:relative; top:0%; width:100%;">
-		
+		<img src="static/Works/Snaps/w_s_3.png" id="kdimg">
+		<p id="kdshowtg">
+
+		<span style="color:#F7941C; background:white; padding:6px; border-radius:5px; padding-top:2px; padding-bottom:2px;">Web Development <i class="fa fa-globe"></i></span><br>
+		<span style="color:#0F75BB; background:white; padding:6px; border-radius:5px; padding-top:2px; padding-bottom:2px;">+<br>Entrepreneurship <i class="fa fa-line-chart"></i></span><br>
+	     </p>
 	</div>
 	<div id="kdshow" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
 		<div id="kdname" style="">
 			<p id="proname">Puppies Papadise </p>
-			<p id="creator"><img id="creatorpic" src="https://i.pinimg.com/736x/bf/d4/ee/bfd4ee1e4eed9dc4fea9315fa3dc77f0.jpg">
+			<div id="bu">Business</div>
+            <div id="wd">Web Design</div>
 
-				<span id="creatorname">BY Nandika Joshi</span></p>
 		</div>
-		<img src="static/Works/Snaps/w_s_1.png" style="position:relative; top:0%; width:100%;">
-		
+		<img src="static/Works/Snaps/w_s_1.png" id="kdimg">
+		<p id="kdshowtg">
+		<span style="color:#F7941C; background:white; padding:6px; border-radius:5px; padding-top:2px; padding-bottom:2px;">Entrepreneurship <i class="fa fa-line-chart"></i></span><br>
+	     </p>
 	</div>
 	</div>
 	
@@ -337,48 +337,53 @@ $("#lefts").click(function(){
    }
 });
 </script> 
-<button id="viewm">
+<button id="connect">
 		View More
 	</button>
 <div id="part8">
-	<center id="pt8hd">Lorem ipsum dolor sit amet</center>
-	<center id="pt8sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-		</center>
-
-		<form id="pt8fm" method="POST">
+	<div id="pt8cnt">
+	<p id="pt8hd" style="">Contact Us</p><br>
+	<p id="pt8sm" style="">Thank you for gracing our platform with your presence. For any inquiries, contact us <i class="fa fa-long-arrow-right"></i>
+		</p></div>
+<form id="pt8fm" method="POST">
     	{% csrf_token %}
   	{% for field in form %}
+      
   	{{ field }}
+
+  	
   	{% endfor %}
-    <button type="submit" id="pt8bt"><b>Get Started</b> <i style="margin-left:5px;" class="fa fa-bell"></i></button>
+
+    <button type="submit" id="pt8bt"><b>Get Started</b> <i style="" class="fa fa-bell"></i></button>
 
   </form>
+
+		</div>
+
+		
 </div>
 
 <div id="foot">
 	<div id="footlogocnt">
 		<p style="font-family: 'Fredoka One', cursive; color: #0F75BB; font-size:26px;">Skills<span style="color: #F7941C;">Guru</span>kul.</p>
-		<p id="footlogotxt">Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Cras semper auctor.</p>
+		<p id="footlogotxt">Skills for tomorrow through old school learning using new age technology.</p>
 	</div>
 	<div id="ftsmhdct">
 		<p id="ftsmhdcnt">CODING</p>
 		<p id="ftsmhdstf">
-			<span>Intro to Coding</span><br>
-			<span>Python1</span><br>
-			<span>Python2</span><br>
-			<span>Python3</span><br>
-			<span>Web Developement</span><br>
-			<span>Data Science</span><br>
-			<span>Embed & Robotics</span><br>
+
+			<span> Python 1</span><br>
+            <span> Python 2</span><br>
+            <span> Python 3</span><br>
+            <span>Web Dev (Javascript)</span><br>
+            <span>Game Development</span><br>
 		</p>
 	</div>
 	<div id="ftsmhdct" style="">
-		<p id="ftsmhdcnt">Math Track</p>
+		<p id="ftsmhdcnt">AP Mathematics</p>
 		<p id="ftsmhdstf">
-			<span>Basic Math</span><br>
-			<span>Pro Algebra</span><br>
-			<span>Algebra</span><br>
-			<span>Algebra + </span><br>
+			<span>Pre Algebra</span><br>
+			<span>Algebra 1 & Geometry 1</span><br>
 			<span>Algebra 2</span><br>
 			<span>Calculus</span><br>
 			<span>AP Courses</span><br>
@@ -386,25 +391,26 @@ $("#lefts").click(function(){
 	</div>
 
 	<div id="ftsmhdct" style="">
-		<p id="ftsmhdcnt">Math Track</p>
+		<p id="ftsmhdcnt">Business & Finance</p>
 		<p id="ftsmhdstf">
-			<span>Ecomamics & Business 1</span><br>
-			<span>Ecomamics & Business 2</span><br>
-			<span>Ecomamics & Business 3</span><br>
+			<span>Business & Personal Finance 1</span><br>
+			<span> Business & Personal Finance 2
+</span><br>
+
 			<span>Entrepenureship 1</span><br>
 			<span>Entrepenureship 2</span><br>
-			<span>Product & Marketing 1</span><br>
-			<span>Product & Marketing 2</span><br>
+			<span>Finance and Technology</span><br>
+
 		</p>
 	</div>
 
 	<div id="ftsmhdct" style=";">
-		<p id="ftsmhdcnt">Math Track</p>
+		<p id="ftsmhdcnt">SkillsGurukul</p>
 		<p id="ftsmhdstf">
-		<span>About</span><br>
-			<span>Login</span><br>
-			<span>Sing Up</span><br>
+		<span>Home</span><br>
 			<span>Contact</span><br>
+			<span>Courses</span><br>
+			<span>Student Showcase</span><br>
 		</p>
 	</div>
 
