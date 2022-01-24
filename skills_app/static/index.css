@@ -127,7 +127,7 @@ input:focus{
 
 #kdshow{position:relative; float:left; width:30%; height:420px; overflow:hidden; margin-left:2.5%; cursor:pointer;}
 #kdshowtg{position:absolute; top:27%; left:50px; color:white; font-size:25px; font-family: 'Fredoka One', cursive;}
-#kdimg{position:relative; top:0%; width:100%; filter:blur(2px); transition:0.3s;}
+#kdimg{position:relative; top:0%; width:100%; transition:0.3s;}
 #kdshow:hover #kdshowtg{display:none;}
 #kdshow:hover #kdimg{  filter:blur(0px);}
 
@@ -216,8 +216,10 @@ a{text-decoration:none;}
 #letscon{transition:0.2s; position:absolute; width:14%; left:42.5%; height:50px; top:428%; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
 #letscon:hover{opacity:0.85;}
 #pt8cnt{position:absolute; top:-13%; left:5%; width:40%;}
-
+#pt1cntsm{position:relative; top:-40px;}
 @media only screen and (max-width: 550px) {
+  #pt1cntli{font-family: 'Outfit', sans-serif; font-weight:200; font-size:19px; color:#253138;}
+#pt1cntsm{position:relative; top:-20px;}
 #kdshowtg{position:absolute; top:27%; left:50px; color:white; font-size:20px; font-family: 'Fredoka One', cursive;}
 .box:hover {
   -webkit-transform: scale(1, 1);
@@ -241,7 +243,7 @@ a{text-decoration:none;}
 .navsc{display:none;}
 #pt1hed{position:absolute; top:45%; left:5%; width:90%;}
 #pt1hedcnt{font-family: 'Playfair Display', serif; line-height:110%; font-size:45px; color:#253138; }
-#pt1cnt{font-family: 'Outfit', sans-serif; position:relative; top:-40px; line-height:150%; font-weight:300; font-size:16px; color:#253138; }
+#pt1cnt{font-family: 'Outfit', sans-serif; position:relative; top:0px; line-height:150%; font-weight:300; font-size:16px; color:#253138; }
 #pt1inp{float:left; width:90%; height:50px; margin-top:10px; border:none; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius:5px; padding-left:10px; font-size:18px;}
 #pt1sub{float:left; width:165px; position:relative; top:-30px; height:50px; margin:15px; margin-left:0px; border-radius:5px; color:white; background:#0F75BB;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
 
