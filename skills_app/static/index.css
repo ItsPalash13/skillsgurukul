@@ -66,7 +66,7 @@ input:focus{
 #anim1chkbox{position:relative; top:-60px;color:#494E8A;font-family: 'Outfit', sans-serif;font-weight:200; font-size:18px; line-height:180%;}
 #anim1lm{position:relative; top:-30px; left:10px; width:140px; height:55px; font-family: 'Roboto', sans-serif; border:2.5px solid #20B573; background:none; color:#20B573; border-radius:5px; font-size:16px;}
 
-#part3{position:absolute; top:220%; left:0%; width:100%; height:100%; overflow:hidden;}
+#part3{position:absolute; top:475%; left:0%; width:100%; height:100%; overflow:hidden;}
 #animContainer2{position:absolute; top:0%; width:40%; left:50%; z-index:5;}
 #anim2cnt{position:absolute; top:15%; width:35%; left:5%; z-index:1;}
 #anim2shrthd{font-family: 'Outfit', sans-serif; color:#3E71C4; font-size: 20px; font-weight:200;}
@@ -84,9 +84,9 @@ input:focus{
 #anim3chkbox{position:relative; top:-60px;color:#494E8A;font-family: 'Outfit', sans-serif;font-weight:200; font-size:18px; line-height:180%;}
 #anim3lm{position:relative; top:-30px; left:10px; width:140px; height:55px; font-family: 'Roboto', sans-serif; border:2.5px solid #FEB92C; background:none; color:#FEB92C; border-radius:5px; font-size:16px;}
 
-#part5{position:absolute; top:320%; left:0%; width:100%; height:100%;}
+#part5{position:absolute; top:230%; left:0%; width:100%; height:100%;}
 #oc{position:relative; top:10%; left:0%; width:100%; height:10%;font-size:29px; overflow:hidden;font-family:myFirstFont;color: #2271E8;}
-
+#note{position:absolute; right:1%; bottom:5%; font-size:13px; font-family: 'Outfit', sans-serif; font-weight:200;}
 #part6{position:absolute; top:25%; left:3%; width:94%; height:75%;}
 #part6dv{float:left; height:100%; margin-left:3%; width:28%; border-radius:10px; overflow:hidden;}
 #pt6cnt{position:relative; top:5%; width:90%; left:0%; height:35%;}
@@ -121,9 +121,9 @@ input:focus{
 #ftsmhdcnt{font-family: 'Outfit', sans-serif; font-weight:600; font-size:16px; position:relative; top:-20px; color:#a6a6a6; width:250px; letter-spacing:0.5;}
 #ftsmhdstf{font-family: 'Outfit', sans-serif; font-weight:300; font-size:14px; position:relative; top:-20px; color:#292F4D; width:250px; letter-spacing:0.5; line-height:190%;}
 
-#kdsshcnt{position:absolute; top:460%; width:100%; height:10%; left:0%;}
+#kdsshcnt{position:absolute; top:370%; width:100%; height:10%; left:0%;}
 
-#kidshow{position:absolute; top:480%; width:96%; left:2%; overflow:hidden; height:80%;}
+#kidshow{position:absolute; top:390%; width:96%; left:2%; overflow:hidden; height:80%;}
 
 #kdshow{position:relative; float:left; width:30%; height:420px; overflow:hidden; margin-left:2.5%; cursor:pointer;}
 #kdshowtg{position:absolute; top:27%; left:50px; color:white; font-size:25px; font-family: 'Fredoka One', cursive;}
@@ -136,8 +136,8 @@ input:focus{
 #creator{position:relative; top:-7px; margin-left:20px; font-size:13px; color:#202121; letter-spacing:0.5px; font-weight:300;}
 #creatorname{position:relative; top:5px;}
 #creatorpic{float:left; width:30px; height:30px; margin-right:15px; clip-path: circle(50% at 50% 50%);}
-#connect{cursor:pointer; position:absolute; top:552%; width:15%; height:7%; left:42.5%; font-family: 'Roboto', sans-serif; border:2.5px solid #f2f2f2; background:#f2f2f2; color:#a6a6a6; border-radius:5px; font-size:16px; z-index:5;}
-#connect:hover{color:#808080; background: #e6e6e6;}
+#viewm{cursor:pointer; position:absolute; top:465%; width:15%; height:7%; left:42.5%; font-family: 'Roboto', sans-serif; border:2.5px solid #f2f2f2; background:#f2f2f2; color:#a6a6a6; border-radius:5px; font-size:16px; z-index:5;}
+#viewm:hover{color:#808080; background: #e6e6e6;}
 
 .container {
   display: inline-block;
@@ -213,7 +213,7 @@ opacity:1;
 }
 a{text-decoration:none;}
 #txtarmsg{float:left; width:350px; height:120px; margin-top:10px; border:none; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius:5px; padding-left:10px; font-size:18px;}
-#letscon{transition:0.2s; position:absolute; width:14%; left:42.5%; height:50px; top:428%; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
+#letscon{transition:0.2s; position:absolute; width:14%; left:42.5%; height:50px; top:340%; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
 #letscon:hover{opacity:0.85;}
 #pt8cnt{position:absolute; top:-13%; left:5%; width:40%;}
 #pt1cntsm{position:relative; top:-40px;}
@@ -253,21 +253,22 @@ a{text-decoration:none;}
 #animContainer1{position:absolute; top:-50px; width:auto; height:500px; left:0%; z-index:-5;}
 #anim1cnt{position:absolute; top:350px; width:92%; left:4%; z-index:1;}
 
-#part3{position:absolute; top:1920px; left:0%; width:100%; height:1200px; overflow:hidden;}
+#part3{position:absolute; top:3370px; left:0%; width:100%; height:1200px; overflow:hidden;}
 #animContainer2{position:absolute; top:-100px; width:auto; height:500px; left:0%; z-index:-5;}
 #anim2cnt{position:absolute; top:400px; width:92%; left:4%; z-index:1;}
+#note{position:absolute; right:auto; left:10%; bottom:80px; font-size:13px; font-family: 'Outfit', sans-serif; font-weight:200;}
 
 
 #part4{position:absolute; top:3000px; left:0%; width:100%; height:1200px; overflow:hidden;}
 #animContainer3{position:absolute; top:-50px; width:auto; height:500px; left:0%; z-index:-5;}
 #anim3cnt{position:absolute; top:450px; width:92%; left:4%; z-index:1;}
 
-#part5{position:absolute; top:3050px; left:0%; width:100%; height:700px; overflow:hidden;}
+#part5{position:absolute; top:1920px; left:0%; width:100%; height:700px; overflow:hidden;}
 #oc{position:relative; top:0%; left:0%; width:100%; height:10%;font-size:29px; overflow:hidden;font-family:myFirstFont;color: #2271E8;}
 #part6{position:absolute; top:10%; left:3%; width:1300px; height:75%;}
 #part6dv{float:left; height:500px; margin-left:20px; width:350px; border-radius:10px;}
 
-#letscon{position:absolute; width:40%; left:27.5%; height:50px; top:3680px; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
+#letscon{position:absolute; width:40%; left:27.5%; height:50px; top:2550px; border-radius:5px; color:white; background:#474BFF;text-decoration: none; border:none; font-size:15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;font-family: 'Outfit', sans-serif;}
 
 #part7{ position:absolute; top:4700px; left:0%; width:100%; height:650px; overflow:hidden;}
 #pt7head{font-family: 'Roboto', sans-serif; color:#292F4D; font-size:25px; position:relative; top:-180px;}
@@ -277,15 +278,15 @@ a{text-decoration:none;}
 #pt7img{width:180px; height:180px; border-radius:50%; left:30%; position:relative; top:100px; overflow:hidden; border:3px solid #cccccc;}
 
 
-#kdsshcnt{position:absolute; top:3770px; width:100%; height:10%; left:0%;}
-#kidshow{position:absolute; top:3870px; width:1080px; left:4%; overflow:hidden; height:500px;}
+#kdsshcnt{position:absolute; top:2670px; width:100%; height:10%; left:0%;}
+#kidshow{position:absolute; top:2750px; width:1080px; left:4%; overflow:hidden; height:500px;}
 #kdshow{position:relative; float:left; width:30%; height:420px; overflow:hidden; margin-left:2.5%;}
 #kdname{position:absolute; top:77.5%; left:0%; width:100%; height:22.5%; background:white; font-family: 'Roboto', sans-serif; z-index:5;}
 #proname{position:relative; top:2px; left:20px; font-size:16px; color:#202121; font-weight:400;}
 #creator{position:relative; top:-7px; margin-left:20px; font-size:13px; color:#202121; letter-spacing:0.5px; font-weight:300;}
 #creatorname{position:relative; top:5px;}
 #creatorpic{float:left; width:30px; height:30px; margin-right:15px; clip-path: circle(50% at 50% 50%);}
-#connect{cursor:pointer; position:absolute; top:4350px; width:30%; height:7%; left:35%; font-family: 'Roboto', sans-serif; border:2.5px solid #f2f2f2; background:#f2f2f2; color:#a6a6a6; border-radius:5px; font-size:16px; z-index:8;}
+#viewm{cursor:pointer; position:absolute; top:3230px; width:30%; height:6%; left:35%; font-family: 'Roboto', sans-serif; border:2.5px solid #f2f2f2; background:#f2f2f2; color:#a6a6a6; border-radius:5px; font-size:16px; z-index:8;}
 
 #pt8cnt{position:absolute; top:-13%; left:5%; width:80%;}
 #part8{position:absolute; font-family: 'Outfit', sans-serif; font-weight:600; top:4500px; left:0%; width:100%; height:530px; background: #0D42AF; overflow:hidden; color:white;}
