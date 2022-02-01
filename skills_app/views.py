@@ -14,8 +14,7 @@ from django.views.decorators.csrf import csrf_exempt
 def hello(request):
    text = """<h1>welcome to my app !</h1>"""
    return HttpResponse(text)
-def index_view(request):
-    return render(request, "index.html")
+
 def index(request):
    if request.method == "POST":
       form= MessageForm(request.POST)
@@ -26,7 +25,7 @@ def index(request):
          print(email)
          form.save()
  
-         send_mail('Enquiry',name+email+message,'21051070@kiit.ac.in',['21051070@kiit.ac.in'],fail_silently=False,)
+         send_mail('SkillsGurukul Contact Us:',"Name : "+name+"\n"+"Email : "+email+"\n"+"Message : "+message,'21051070@kiit.ac.in',['21051070@kiit.ac.in'],fail_silently=False,)
          return redirect("")
          
    else:
@@ -34,11 +33,23 @@ def index(request):
         
    return render(request, "index.html",{'form': form})
 
-class test(CreateView):
-    model = Email_list
-    template_name = 'test.html'
-    fields = '__all__'
-    success_url = "/test"   
+def about(request):
+   if request.method == "POST":
+      form= MessageForm(request.POST)
+      if form.is_valid():
+         name = form.cleaned_data['name']
+         email = form.cleaned_data['email']
+         message = form.cleaned_data['message']
+         print(email)
+         form.save()
+ 
+         send_mail('SkillsGurukul Contact Us:',"Name : "+name+"\n"+"Email : "+email+"\n"+"Message : "+message,'21051070@kiit.ac.in',['21051070@kiit.ac.in'],fail_silently=False,)
+         return redirect("")
+         
+   else:
+        form = MessageForm()
+        
+   return render(request, "about.html",{'form': form}) 
 
 """
 submitted = False
