@@ -25,7 +25,7 @@ def index(request):
          print(email)
          form.save()
  
-         send_mail('SkillsGurukul Contact Us:',"Name : "+name+"\n"+"Email : "+email+"\n"+"Message : "+message,'21051070@kiit.ac.in',['21051070@kiit.ac.in'],fail_silently=False,)
+         send_mail('SkillsGurukul Contact Us:',"Name : "+name+"\n"+"Email : "+email+"\n"+"Message : "+message,'21051070@kiit.ac.in',['skillsgurukulusa@gmail.com','21051070@kiit.ac.in'],fail_silently=False,)
          return redirect("")
          
    else:
@@ -43,7 +43,7 @@ def about(request):
          print(email)
          form.save()
  
-         send_mail('SkillsGurukul Contact Us:',"Name : "+name+"\n"+"Email : "+email+"\n"+"Message : "+message,'21051070@kiit.ac.in',['21051070@kiit.ac.in'],fail_silently=False,)
+         send_mail('SkillsGurukul Contact Us:',"Name : "+name+"\n"+"Email : "+email+"\n"+"Message : "+message,'21051070@kiit.ac.in',['skillsgurukulusa@gmail.com','21051070@kiit.ac.in'],fail_silently=False,)
          return redirect("")
          
    else:
